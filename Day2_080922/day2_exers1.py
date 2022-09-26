@@ -9,6 +9,8 @@
 # It could use a variable with the current year.
 # It would be even better to get the current year automatically
 
+import datetime
+
 name = input ("What is your name? ")
 print (f"Hello {name}")
 
@@ -16,7 +18,9 @@ age_now = int(input ("What is your age? "))
 print (f"It's nice age {age_now}")
 
 age_100 = int(100)
-
 age_between = age_100 - age_now
-
 print(f"You will be 100 age old in {age_between} years")
+
+current_year = datetime.datetime.now().year
+year_when_will_be_100 = int(current_year) + int(age_100)
+print(f"And it will happened in {year_when_will_be_100}!")
