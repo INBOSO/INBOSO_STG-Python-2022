@@ -1,13 +1,24 @@
+
+#1
 m_salary_amount = int(input("What is your monthly salary amount? "))
 years_worked = float(input("How long are you with company? (in years) "))
-bonus = m_salary_amount * 0.15 * years_worked
+bonus = m_salary_amount * 0.15 * (years_worked-2)
 
 if years_worked >= 2:
     print (f"Your bonus 15% from {m_salary_amount} is: {bonus}")
 else:
     print ("No bonus (0)")
 
+#2
+years_worked = float(input("How long are you with company? (in years) "))
 
+if years_worked > 2:
+    m_salary_amount = int(input("What is your monthly salary amount? "))
+    bonus = m_salary_amount * 0.15 * (years_worked-2)
+    print (f"Your bonus 15% from {m_salary_amount} is: {bonus}")
+
+else:
+    print ("No bonus (0)")
 
 # 2. Xmas Bonus
 
