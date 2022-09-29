@@ -41,43 +41,43 @@ print(is_not_equal)
 # # print(a * 5 == b * 2.5)
 # # # # #
 # # # # # # greater >
-# print(a,b)
-# print(2 > 3, 3 > 2, 9001 > 9000) # False True True
-# print(a * a > 3, a * a > b, a * a > 5, a * a > b * 15)
+print(a,b)
+print(2 > 3, 3 > 2, 9001 > 9000) # False True True
+print(a * a > 3, a * a > b, a * a > 5, a * a > b * 15)
 # # b = 10
 # # print(a * a > 3, a * a > b, a * a > 5, a * a > b * 15)
-# print(True > False)  # if True is 1 and False is 0 then this should be True :)
+print(True > False)  # if True is 1 and False is 0 then this should be True :)
 # # # # # # we can compare other data types
-# print("Voldemars" > "Valdis")  # gives us True but why?
+print("Voldemars" > "Valdis")  # gives us True but why?
 # # # # # #
-# print("Voldis" > "Valdis")  # this is also true
-# print("Vol" > "Valdis")
-# print(ord("V"), ord("a"), ord("o"), ord("ā"), ord("😀"))  # we can get Unicode codes for characters
-# print(chr(86), chr(97), chr(256), chr(257), chr(18000), chr(128512))  # i can print from codes the symbols
+print("Voldis" > "Valdis")  # this is also true
+print("Vol" > "Valdis")
+print(ord("V"), ord("a"), ord("o"), ord("ā"), ord("😀"))  # we can get Unicode codes for characters
+print(chr(86), chr(97), chr(256), chr(257), chr(18000), chr(128512))  # i can print from codes the symbols
 # # # # #
 # # # # # if we need by length - we can measure length of sequences , strings and many other types
-# print(len("Voldemārs") > len("Valdis"))
-# print(len("Voldemārs"))
-# print(len("Valdis"))
+print(len("Voldemārs") > len("Valdis"))
+print(len("Voldemārs"))
+print(len("Valdis"))
 # # # # less than <
-# print(a,b)
-# print(2 < 3, 3 < 3, a < b, b < a) # True False True False
+print(a,b)
+print(2 < 3, 3 < 3, a < b, b < a) # True False True False
 # # # # #
 # # # # # # less or equal
-# print(a,b)
-# print(2 <= 3, 3 <= 3, 3 <= 4, 5 <= 3)
-# print(a*2 <= 3, a*2 <= b, a*2 <= b*2, a*2 <= b*2.5) # False True True True
+print(a,b)
+print(2 <= 3, 3 <= 3, 3 <= 4, 5 <= 3)
+print(a*2 <= b, a*2 <= b*2, a*2 <= b*2.5) # False True True True
 # # print(a <= 14, a <= 15, b <= 16)
 # # # # #
 # # # # # # gt greater or equal
 # print(2 >= 3, 3 >= 3, 4 >= 3, a * 2 >= b * 3)
 # # # # #
 # # # #
-# c = 50
-# print(a,b,c,1000)
-# # so in Python we can compare multiple values at once
-# print(a < b < c < 1000)  # so 2 < 4 < 50 < 1000 is True
-# print(5000 < a < 8000)  # False
+c = 50
+print(a,b,c,1000)
+# so in Python we can compare multiple values at once
+print(a < b < c < 1000)  # so 2 < 4 < 50 < 1000 is True
+print(5000 < a < 8000)  # False
 # # a = 8
 # # # # we can compare more than two at once
 # # print(a,b,c,1000)
@@ -87,11 +87,11 @@ print(is_not_equal)
 # # # # # # is compares actual memory address
 # # # # # # used less
 # # you use is to compare if two variables point to the same object
-# print(a is b)  # really it is id(a) == id(b)
+print(a is b)  # really it is id(a) == id(b)
 # # print(2 is 2)  # should not really use instead use == AVOID!
-# print((2*2 == 4) is True) # use to compare something with True or False
-# print((2*3 == 4) is False) # True again
-# print((2*3 == 4) == False) # not recommended but works
+print((2*2 == 4) is True) # use to compare something with True or False
+print((2*3 == 4) is False) # True again
+print((2*3 == 4) == False) # not recommended but works
 # # # # # # we use it when we need to see if both variables point to same object
 # # # # # is can be handy for finding whether you have same shopping cart
 # # # # or you have two different shopping carts with same items - just an analogy
