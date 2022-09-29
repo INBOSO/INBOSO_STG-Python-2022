@@ -1,3 +1,12 @@
+m_salary_amount = input("What is your monthly salary amount? ")
+years_worked = input("How long are you with company? (in years) ")
+bonus = m_salary_amount * 0,15
+# if years_worked >=2:
+#     print ("Your bonus 15% {m_salary_amount} is: ")
+
+print(m_salary_amount)
+
+
 # 2. Xmas Bonus
 
 # The company has promised a Christmas bonus in the amount of 15% of the monthly salary for EVERY year of 
@@ -10,3 +19,4 @@
 # Example1: 5 years of experience, 1000 Euro salary, the bonus will be 450 Euro.
 
 # Example2: 1.5 years of experience, 1500 Euro salary, no bonus(0)
+
