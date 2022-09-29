@@ -1,63 +1,64 @@
-# # # # # # # a = 215
-# # # # # # a = int(input("Input a"))
-# # # # # a = 9000
-# # a = 3
-# # # # # #
-# # # ususally we use if statements with variables
-# # # if False:  # after : is the code block, must be indented
-# # #     print("True")
-# # #     print("This always runs because if statement is True")
-# # #     print("Still working in if block")
+# # # # # # # # a = 215
+# # # # # # # a = int(input("Input a"))
+# # # # # # a = 9000
+# a = 3
+# # # # # # #
+# # # # ususally we use if statements with variables
+# if False:  # after : is the code block, must be indented
+#     print("True")
+#     print("This always runs because if statement is True")
+#     print("Still working in if block")
 # # #     print("This always runs because if statement is False")  
 
-# # # # # # if block has ended
-# # print("This runs no matter what because we are outside if ")
-# # # # # # # # after we go back to our normal indentation the if block is ended
-# # # # # # #
-# # a = 25
-# # if a > 10: # in Python when you see : next line will be indented
-# #     # runs only when statement after if is True
-# #     print("Do this when a is larger than 10")
-# #     print(f"Still only runs when a > {a}")
-# #     # we can keep doing things when a > 10 here
-# # # #
-# # # # # # here we have exited if
-# # print("This will always print no matter what")
+# # # # # # # if block has ended
+# print("This runs no matter what because we are outside if ")
+# # # # # # # # # after we go back to our normal indentation the if block is ended
+# # # # # # # #
+# a = 25
+# if a > 10: # in Python when you see : next line will be indented
+#     # runs only when statement after if is True
+#     print("Do this when a is larger than 10")
+#     print(f"Still only runs when a > {a}")
+# # #     # we can keep doing things when a > 10 here
+# # # # #
+# # # # # # # here we have exited if
+# print("This will always print no matter what")
+# # # # # # # # # # #
 # # # # # # # # # #
-# # # # # # # # #
-# # # # # # # # a = -333
-# # # # # # # # a = 200
-# # # a = 44
+# # # # # # # # # a = -333
+# # # # # # # # # a = 200
+# # # # a = 44
 # a = 15
-# # we add else block to run if the if statement is False
-# # road less traveled by Robert Frost
-# # we can not take BOTH!!!!
-# # a = -43 # i overwrite previous value
-# # a = 10
-# # if a > 10:  # in Python when you see : next line will be indented
-# #     # runs only when statement after if is True
-# #     print("Again Do this when a is larger than 10")
-# #     print("Indeed a is", a)
-# # else:  # when a is <= 10
-# #     print("Only when a is less or equal to 10")
-# #     print("Indeed a is only", a)
-# #     # we could do more stuff here when a is not larger than 10
+# a = -43
+# # # we add else block to run if the if statement is False
+# # # road less traveled by Robert Frost
+# # # we can not take BOTH!!!!
+# # # a = -43 # i overwrite previous value
+# # # a = 10
+# if a > 10:  # in Python when you see : next line will be indented
+#     # runs only when statement after if is True
+#     print("Again Do this when a is larger than 10")
+#     print("Indeed a is", a)
+# else:  # when a is <= 10
+#     print("Only when a is less or equal to 10")
+#     print("Indeed a is only", a)
+#     # we could do more stuff here when a is not larger than 10
 
-# # print("We are out of if else block and this runs no matter what")
+# print("We are out of if else block and this runs no matter what")
 # # # # # #
 # # # # # # # # a = 10
-# # a = 200
+a = 200
 # # a = -95
 # a = 10
 # # # # a = -355
 # # # if we need more than 2 distinct paths
-# if a > 10:  # in Python when you see : next line will be indented
-#     # runs only when statement after if is True
-#     print("Again Do this when a is larger than 10", a)
-# elif a < 10:
-#     print("ahh a is less than 10", a)
-# else:  # so a must be 10 no other choices you do not need to check, after all other choices are exhausted
-#     print("Only when a is equal to 10 since we checked other cases", a)
+if a > 10:  # in Python when you see : next line will be indented
+    # runs only when statement after if is True
+    print("Again Do this when a is larger than 10", a)
+elif a < 10:
+    print("ahh a is less than 10", a)
+else:  # so a must be 10 no other choices you do not need to check, after all other choices are exhausted
+    print("Only when a is equal to 10 since we checked other cases", a)
 #     # we could do more stuff here when a is not larger than 10
 # # # # # # # # #
 # print("Back to normal program flow which always runs no matter what a is")
