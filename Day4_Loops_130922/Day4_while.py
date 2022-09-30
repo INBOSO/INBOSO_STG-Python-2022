@@ -1,28 +1,28 @@
-print("Hello")
-print("Hello")
-print("Hello")
-print("Hello")
-# # # we can use while loop to print the same line 5 times
-# # # this can heat up the computer ...
-# # while True:
-# #     print("Do you want to continue?")
-# #     print("Hello")
+# print("Hello")
+# print("Hello")
+# print("Hello")
+# print("Hello")
+# # # # we can use while loop to print the same line 5 times
+# # # # this can heat up the computer ...
+# while True:
+#     print("Do you want to continue?")
+#     print("Hello")
 
 # # so above infinite loop actually can be stopped by pressing Ctrl+C
 # # infinite loops are used in games, for example, or any application as the main loop
 
-# # i = 0  # so caller iterator, or index if you will
-# # while i < 5:  # while loops are for indeterminate time
-# #     print("Hello") # do not have to use i 
-# #     print("Hello No.", i)
-# #     print(f"Hello Number {i}")
-# #     print(f"{i} squared is {i**2}")
-# #     # it is crucial that we increment the iterator
-# #     # otherwise we will get an infinite loop
-# #     i += 1  # i = i + 1 # we will have a infinite loop without i += 1, there is no i++
-# # # while loop is finished here
-# # print("Always happens once loop is finished")
-# # print("i is now", i)
+i = 0  # so caller iterator, or index if you will
+while i < 5:  # while loops are for indeterminate time
+    print("Hello") # do not have to use i 
+    # print(f"Hello No. {i}")
+    print(f"Hello Number {i}")
+    # print(f"{i} squared is {i**2}")
+    # it is crucial that we increment the iterator
+    # otherwise we will get an infinite loop
+    i += 1  # i = i + 1 # we will have a infinite loop without i += 1, there is no i++
+# while loop is finished here
+print("Always happens once loop is finished")
+print("i is now", i)
 # # # #
 # # i = 10
 # # while i >= 0:
