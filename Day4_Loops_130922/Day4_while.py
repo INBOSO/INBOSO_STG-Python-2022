@@ -11,52 +11,52 @@
 # # so above infinite loop actually can be stopped by pressing Ctrl+C
 # # infinite loops are used in games, for example, or any application as the main loop
 
-i = 0  # so caller iterator, or index if you will
-while i < 5:  # while loops are for indeterminate time
-    print("Hello") # do not have to use i 
-    # print(f"Hello No. {i}")
-    print(f"Hello Number {i}")
-    # print(f"{i} squared is {i**2}")
-    # it is crucial that we increment the iterator
-    # otherwise we will get an infinite loop
-    i += 1  # i = i + 1 # we will have a infinite loop without i += 1, there is no i++
-# while loop is finished here
-print("Always happens once loop is finished")
-print("i is now", i)
+# i = 0  # so caller iterator, or index if you will
+# while i < 5:  # while loops are for indeterminate time
+#     print("Hello") # do not have to use i 
+#     # print(f"Hello No. {i}")
+#     print(f"Hello Number {i}")
+#     print(f"{i} squared is {i**2}")
+#     # it is crucial that we increment the iterator
+#     # otherwise we will get an infinite loop
+#     i += 1  # i = i + 1 # we will have a infinite loop without i += 1, there is no i++
+# # while loop is finished here
+# print("Always happens once loop is finished")
+# print("i is now", i)
 # # # #
-# # i = 10
-# # while i >= 0:
-# #     print("Going down the floor:", i)
-# #     # i could do more stuff
-# #     if i == 0:
-# #         print("Cool we reached the garage")
-# #     i -= 5  # i = i - 1
-# # # once we are done with the above loop    
-# # print("Whew we are done with this i floor:", i)
+# i = 10
+# while i >= 0:
+#     print("Going down the floor:", i)
+#     # i could do more stuff
+#     if i == 0:
+#         print("Cool we reached the garage")
+#     i -= 5  # i = i - 1
+# # once we are done with the above loop    
+# print("Whew we are done with this i floor:", i)
 # # what will be the value of i at the end of the above loop?
 
 # # # # #
-# # total = 0 # do not use sum as name for variable, because sum is a built in function
-# # i = 20
-# # print(f"BEFORE loop i is {i} total is {total}")
-# # while i <= 30:
-# #     # we add current value of i to total
-# #     total += i # total = total + i 
-# #     print(f"After adding {i} total is {total}")
-# #     i += 2 # step will be 2 here
-# # print(f"i is {i} total is {total}")
+# total = 0 # do not use sum as name for variable, because sum is a built in function
+# i = 20
+# print(f"BEFORE loop i is {i} total is {total}")
+# while i <= 30:
+#     # we add current value of i to total
+#     total += i # total = total + i 
+#     print(f"After adding {i} total is {total}")
+#     i += 2 # step will be 2 here
+# print(f"i is {i} total is {total}")
 # # #
 # # # # # general loop with start, stop, step
-# # start = 50
-# # stop = 400
-# # step = 125  # we do have a for loop for this type of looping but step here can be a float
-# # i = start  # initialization
-# # while i <= stop:  # you could also stop before stop is reached then use  i < stop
-# #     print(i)
-# #     print(f"i is {i}")
-# #     i += step  # we add step to i
-# # # # # #
-# # print("After exiting loop i is ", i)
+# start = 50
+# stop = 400
+# step = 125  # we do have a for loop for this type of looping but step here can be a float
+# i = start  # initialization
+# while i <= stop:  # you could also stop before stop is reached then use  i < stop
+#     print(i)
+#     print(f"i is {i}")
+#     i += step  # we add step to i
+# # # # #
+# print("After exiting loop i is ", i)
 # # #
 # # # # start = 10
 # # # # end = 500
@@ -74,17 +74,17 @@ print("i is now", i)
 # # # # so sort of indeterminate
 # # #
 # # # # # #
-# # i = 10_000_000
-# # while True:  # so i am saying here that this loop should run forever .. unless I have something inside to break out
-# #     print("i is", i)  # this line will always happen at least once
-# #     # could add more lines which will run at least once
-# #     # in a while True loop it is typical to check for exit condition
-# #     if i >= 14:  # similar to while i < 28:
-# #         print("Ready to break out i is", i)
-# #         break  # with break we break out of inner loop (here we only have one loop)
-# #     i += 2
-# # # # # # above is simulating do while looping functionality
-# # print("Whew AFTER BREAK out", i)
+i = 10_000_000
+while True:  # so i am saying here that this loop should run forever .. unless I have something inside to break out
+    print("i is", i)  # this line will always happen at least once
+    # could add more lines which will run at least once
+    # in a while True loop it is typical to check for exit condition
+    if i >= 14:  # similar to while i < 28:
+        print("Ready to break out i is", i)
+        break  # with break we break out of inner loop (here we only have one loop)
+    i += 2
+# # # # above is simulating do while looping functionality
+print("Whew AFTER BREAK out", i)
 
 # # the above simulate a do while loop
 # # do while loops do something at least once and then check for exit condition
@@ -124,7 +124,7 @@ print("i is now", i)
 #     cube = num**3
 #     cube = round(cube, 2) # 2 digits after comma
 #     print(f"My calculator says cube of {num} is {cube}")
-# # # #
+# # # # #
 # print("All done whew!")
 # # # #
 # # # # # outer_flag = True
