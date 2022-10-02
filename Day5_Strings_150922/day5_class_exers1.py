@@ -11,5 +11,5 @@
 
 original_name=input("What is Your name? ")
 reversed_name=original_name[::-1].capitalize()
-print(f"Nice to meet you {reversed_name}")
+print(f"{reversed_name}, a thorough mess is it not, {original_name[0]} ?")
 # print(original_name[-1:].upper.repla)
