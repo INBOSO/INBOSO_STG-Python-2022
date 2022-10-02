@@ -1,5 +1,5 @@
 # import enum
-# import string  # this has some extra string constants not required usually
+import string  # this has some extra string constants not required usually
 # # #
 # # what is a string really ?
 # # a string is a sequence of characters
@@ -101,32 +101,32 @@ print(food[:])  # not much point for strings but for other sequences it makes a 
 # # # print(food)
 # # # #
 print(food[5:10], food[5:], food[-5:])
-# food = "Auzu putra ar avenēm un krejumu"
+food = "Auzu putra ar avenēm un krejumu"
 # # Auzu putra ar avenēm un krejumu means oatmeal with raspberries and sour cream
-# print(food[5:10]) # so index 10(11th element) is not included so we get 6th to 10th elements
-# print(food[5:]) # prints from 6th element to end of string
-# print(food[-5:]) # prints last 5 characters
+print(food[5:10]) # so index 10(11th element) is not included so we get 6th to 10th elements
+print(food[5:]) # prints from 6th element to end of string
+print(food[-5:]) # prints last 5 characters
 
-# print(food[5:10], food[5:], food[-5:], sep="\n***\n") # sep is a custom separator
+print(food[5:10], food[5:], food[-5:], sep="\n***\n") # sep is a custom separator
 # # # print(food[5:-2])  # so we start at the 6th character and we go until the last 2two characters
 # # # # # # # # # # # print(food[400]) # so too much positive will give IndexError
 # # # # # # # # # # # print(food[-320])  # so too much negative will give IndexError
 # # # # # # # # # print(food[-320:400]) # we can do this though
 # # # # # # # # # print(food[-10:400]) # we can do this though
 # # # #
-# start = 2  # so to start at 3rd element
-# end = 6  # and go until but not include 7th element
+start = 2  # so to start at 3rd element
+end = 6  # and go until but not include 7th element
 # # step = 3
-# print(food[start:end])
-# text_len = 10
-# new_text = food[start:start + text_len]  # so we could generated slice of needed length
-# print(new_text, len(new_text))
+print(food[start:end])
+text_len = 10
+new_text = food[start:start + text_len]  # so we could generated slice of needed length
+print(new_text, len(new_text))
 
-# # alphabet = "abcdefghijklmnopqrstuvwxyz" # thank you ai, but i will not use it
-# alphabet = string.ascii_lowercase # this is a string of all letters
-# print(alphabet)
-# new_alpha = alphabet[start:start+text_len]
-# print(new_alpha, len(new_alpha))
+alphabet = "abcdefghijklmnopqrstuvwxyz" # thank you ai, but i will not use it
+alphabet = string.ascii_lowercase # this is a string of all letters
+print(alphabet)
+new_alpha = alphabet[start:start+text_len]
+print(new_alpha, len(new_alpha))
 # print(alphabet[2:12]) # will print the same as new_alpha
 # # # # # # # # print(food[5:], food[1:])
 # # # # # print(food)
@@ -134,11 +134,11 @@ print(food[5:10], food[5:], food[-5:])
 # # # # # print(food[:20:2])
 
 # # so slicing also offers us a step option
-# print(alphabet[::2]) # print every second letter
-# print(alphabet[::3]) # print every third letter
-# print(alphabet[1::2]) # print every second letter starting from the second letter
-# print(alphabet[1:7:2]) # print every second letter starting from the second letter
-# print(alphabet[:7:2]) # print every second letter starting from the second letter
+print(alphabet[::2]) # print every second letter
+print(alphabet[::3]) # print every third letter
+print(alphabet[1::2]) # print every second letter starting from the second letter
+print(alphabet[1:7:2]) # print every second letter starting from the second letter
+print(alphabet[:7:2]) # print every second letter starting from the second letter
 # # #
 
 # # # # number_string = "0123456789"
@@ -146,9 +146,9 @@ print(food[5:10], food[5:], food[-5:])
 # # print(number_string)
 # # print(number_string[start:end])
 
-# print(alphabet[::-1]) # reverse alphabet
-# reversed_alphabet = alphabet[::-1] # strings are immutable so we need to create a new one
-# print(reversed_alphabet)
+print(alphabet[::-1]) # reverse alphabet
+reversed_alphabet = alphabet[::-1] # strings are immutable so we need to create a new one
+print(reversed_alphabet)
 # print(alphabet[::-2]) # print every second letter backwards
 # # # print(number_string[::2])  # print every second character
 # # # # # print(food[start:end:step])
@@ -164,21 +164,21 @@ print(food[5:10], food[5:], food[-5:])
 
 # # # # we can find index of what we need
 # # # # starting from left side
-# print('a' in alphabet)  # True')
-# print(alphabet.index("a"))  # should be 0
-# print(alphabet.index("s"))
-# print(alphabet.index("z"))  # should be 25
-# print(alphabet.index("bcd"))  # "bcd" substring starts at index 1
-# print(alphabet.index("defg"))  # defg substring starts at index 3
+print('a' in alphabet)  # True')
+print(alphabet.index("a"))  # should be 0
+print(alphabet.index("s"))
+print(alphabet.index("z"))  # should be 25
+print(alphabet.index("bcd"))  # "bcd" substring starts at index 1
+print(alphabet.index("defg"))  # defg substring starts at index 3
 
 # # print(alphabet.index("V")) # well that will be an error which we could handle with try except block
 
 # # # alternative way to find index of a substring is with find which gives -1 if substring is not found
-# print(alphabet.find("z"))
-# print(alphabet.find("V"))
-# print(alphabet.find("Valdis"))  # again -1 since I am not in the alphabet
-# print(alphabet.find("aldis"))  # again -1 since "aldis" is not in the alphabet
-# print(alphabet.find("xyz"))  # 23 is the index where xyz starts
+print(alphabet.find("z"))
+print(alphabet.find("V"))
+print(alphabet.find("Valdis"))  # again -1 since I am not in the alphabet
+print(alphabet.find("aldis"))  # again -1 since "aldis" is not in the alphabet
+print(alphabet.find("xyz"))  # 23 is the index where xyz starts
 
 # # #
 # # # # # # # print(food[::2]) # this would get 2nd character of any strings
@@ -204,30 +204,30 @@ print(food[5:10], food[5:], food[-5:])
 # # # in Python ' is the same as " but inside I can use both
 # # use whatever is easier for you
 # # if you need single quote inside string use double quotes outside
-# my_text = "Alice told the rabbit 'go down the hole' and then followed"
-# print(my_text)
+my_text = "Alice told the rabbit 'go down the hole' and then followed"
+print(my_text)
 # # if you need double quote inside string use single quotes outside
-# another_text = 'The bottle said "Eat me!" and Alice could not write single quotes'
-# print(another_text)
+another_text = 'The bottle said "Eat me!" and Alice could not write single quotes'
+print(another_text)
 # # #
 # # # # Two approaches for more complex strings
 # # # # notice I also added f before """ to add ability to insert variables
 # # f is not required unless you need variables inside
-# multi_line_string = f"""We can write whatever even go to a
-# new line
-#     or use tab
-#     use single ' and also "
-#     and \u007b so o \u007d
-#     un man patīk {food}
-# you can write double "" which is fine
-# even "" " will work.. 😊
-#     4wt!@#$^&
-# """
-# print(multi_line_string)
+multi_line_string = f"""We can write whatever even go to a
+new line
+    or use tab
+    use single ' and also "
+    and \u007b so o \u007d
+    un man patīk {food}
+you can write double "" which is fine
+even "" " will work.. 😊
+    4wt!@#$^&
+"""
+print(multi_line_string)
 # # you could also use triple single quotes
 # # #
-# escaped_string = "text meaning \" and also \' \n \t and of course \\ so on "
-# print(escaped_string)
+escaped_string = "text meaning \" and also \' \n \t and of course \\ so on "
+print(escaped_string)
 # # # list of escape characters https://docs.python.org/3/reference/lexical_analysis.html
 # # # # # # # # # # # # # food[::-2]
 # print(food)
@@ -244,45 +244,45 @@ print(food[5:10], food[5:], food[-5:])
 # # Still a line but now we are done"""
 # # print(another_multi_string)
 # # # # # # # # # # # # # this will not work
-# # food[3] = "Z" # will not work
+# food[3] = "Z" # will not work
 # # # # # # # # # # # # # # strings are immutable so we need to create new strings
-# new_food = food.replace('u', 'ū')  # replaces in all places by default count= can specify how many
-# print(new_food)
-# new_food_2 = food.replace('u', 'ū', count := 2)  # replaces in all places by default count= can specify how many
-# print(new_food_2)
-# print("X"*len(new_food)) #i can multiple strings with numbers so 20 Xses
-# print("*"*len(new_food)) #i can multiple strings with numbers so 20 Xses
+new_food = food.replace('u', 'ū')  # replaces in all places by default count= can specify how many
+print(new_food)
+new_food_2 = food.replace('u', 'ū', count := 2)  # replaces in all places by default count= can specify how many
+print(new_food_2)
+print("X"*len(new_food)) #i can multiple strings with numbers so 20 Xses
+print("*"*len(new_food)) #i can multiple strings with numbers so 20 Xses
 # # # #
-# print("START", food[:3])
-# print("WILL REPLACE", food[3]) # so we will not keep this one in the new string
-# print("END", food[4:])
-# ze_food = food[:3] + "OXOXO" + food[4:] # so build a new string
-# print(ze_food)
+print("START", food[:3])
+print("WILL REPLACE", food[3]) # so we will not keep this one in the new string
+print("END", food[4:])
+ze_food = food[:3] + "OXOXO" + food[4:] # so build a new string
+print(ze_food)
 # # #
 # # # f-strings might be more readable
-# ze_food_2 = f"{food[:3]}OX_X0{food[4:]}"
-# print(ze_food_2)
+ze_food_2 = f"{food[:3]}OX_X0{food[4:]}"
+print(ze_food_2)
 # # # # we can overlap slices that is completely fine
-# print(alphabet[:-3]+"|||"+alphabet[5:])  # we are making a new string from 3 parts here
+print(alphabet[:-3]+"|||"+alphabet[5:])  # we are making a new string from 3 parts here
 # # ze_food_2 = f"{food[:5]}*Jaunais*{food[2:]}I can keep adding text here {number_string[3:6]}" # this will insert new text between old text not losing anything
 # # print(ze_food_2)
 # # food = "mazaiSSSS karTUPelis jaukais"
-# print(food)
-# cap_food = food.capitalize() # so first word in capital letters
-# print(cap_food)
-# # print(food.capitalize())
-# print(food.title()) # Title Gives Uppercase To Each Word
-# print(food.upper()) # YELLING
-# print(food.lower())
-# print("15004332".isdecimal())
-# print(food.isdecimal()) 
+print(food)
+cap_food = food.capitalize() # so first word in capital letters
+print(cap_food)
+print(food.capitalize())
+print(food.title()) # Title Gives Uppercase To Each Word
+print(food.upper()) # YELLING
+print(food.lower())
+print("15004332".isdecimal())
+print(food.isdecimal()) 
 
 # # print("15004332badac".isdecimal())  # so isdecimal needs all numbers
 # # # #
-# print(food.swapcase()) # so this will swap all letters to lower or upper
+print(food.swapcase()) # so this will swap all letters to lower or upper
 # # # #
-# print(food.count("S"))  
-# print("ABBBBA".count("BB"))  # this is 2, not 3 !
+print(food.count("S"))  
+print("ABBBBA".count("BB"))  # this is 2, not 3 !
 # # it is 2 because count uses exhaustive search
 
 # # # # turns out strings count is exhaustive meaning it eats up the characters when counting
@@ -292,7 +292,7 @@ print(food[5:10], food[5:], food[-5:])
 # # # # # # # # # # # # # print(food.capitalize())
 # # #
 # # # # we can perform multiple methods by chaining them together
-# print(food.upper().replace("A", "Y")) # i can chain operations on strings
+print(food.upper().replace("A", "Y")) # i can chain operations on strings
 # # print(food[-5:].upper())  # i can slice and then use some method
 # # # # # # # # # print(food.count('a'))
 # # # # # print(food.index('z')) # z is 3rd element so index is 2
@@ -325,83 +325,83 @@ print(food[5:10], food[5:], food[-5:])
 # # print(is_found)
 # # # #
 # # # # we can use a loop to print each character in a string
-# for c in food:
-#     print(c, end=":") # so instead of default newline \n i used : as endpoint
-# print()
-# # print("*"*40)
-# # for c in food[3:8]:
-# #     print(c)
+for c in food:
+    print(c, end=":") # so instead of default newline \n i used : as endpoint
+print()
+# print("*"*40)
+# for c in food[3:8]:
+#     print(c)
 # # # #
 # # # # # # # # # # # # print(food.index('a'))
 # # #
-# count = 0
-# bad_char = "e"
-# clean_text = ""
-# for c in food:
-#     if c == bad_char:
-#         count += 1
-#         print("found a bad one", bad_char)
-#     else:
-#         clean_text += c # create new string by adding char to old string
-# print(f"There are {count} {bad_char}s in {food}")
-# print(f"Cleaned {clean_text=}") # this syntax is starting from Python
-# # print(food.replace("e",""))  #o f course here instead of loop we could have let Python handle this
+count = 0
+bad_char = "e"
+clean_text = ""
+for c in food:
+    if c == bad_char:
+        count += 1
+        print("found a bad one", bad_char)
+    else:
+        clean_text += c # create new string by adding char to old string
+print(f"There are {count} {bad_char}s in {food}")
+print(f"Cleaned {clean_text=}") # this syntax is starting from Python
+# # # print(food.replace("e",""))  #o f course here instead of loop we could have let Python handle this
+# # # # #
+# # # # # # # # # # # # # # food, clean_text
+# # # # #
+fresh_text = ""
+for c1, c2 in zip(food, clean_text):  # you can zip many sequences
+    if c1 == c2:
+        fresh_text += c1  # also c2 would work # not great for long texts
+    else:  # mismatch
+        fresh_text += "_"
+print(fresh_text)
+# # # # #
+# # # # print("Going to loop through 2 strings at once until one runs out")
+# # # # print("First string", alphabet)
+# # # # print("Second string", number_string)
+# # # # result = ""
+# # # # for letter, number in zip(alphabet, number_string):
+# # # #     print(letter, "and", number)
+# # # #     result += f"Letter {number} is {letter}\n"  #not the most efficient for large strings
+# # # # print("All done with looping through two strings")
+# # # # print(result)
+# # # # # so above loop ends as soon as one of the sequences run out
 # # # #
-# # # # # # # # # # # # # food, clean_text
 # # # #
-# fresh_text = ""
-# for c1, c2 in zip(food, clean_text):  # you can zip many sequences
-#     if c1 == c2:
-#         fresh_text += c1  # also c2 would work # not great for long texts
-#     else:  # mismatch
-#         fresh_text += "_"
-# print(fresh_text)
+# # # # # # # # # # # # isArtFound = "art" in food
+# # # # # # # # # # # # print(isArtFound)
+# # # # #
+# # # print("Valdis" < "Voldemars")  # because 'a' , 'o' in Unicode table
+# # # print("Valdis" < "Voldis")  # because 'a' , 'o' in Unicode table
+# # # print(len("Valdis") < len("Voldemars"))  # by length
+# # # # #
+# # # # # # # # # # # # # # print("Alice said 'Run rabbit run!' and drunk something")
+# # # # # # # # # # # # # # print("When we need both quotes \" \\ and also ' \n\n new lines ")
+# # # # # # # # # # # # # # print(""" I can write whatever here
+# # # # # # # # # # # # # # even new lines
+# # # # # # # # # # # # # #             with tabs
+# # # # # # # # # # # # # #              ' " " " '
+# # # # # # # # # # # # # # """)
+# # # # # # # # # # # # # # print(food.upper())
+# # # # # # print(food.isalpha())
+# # # # big_food = food + " banana"
+# # # # print(big_food)
+# # # # print(big_food.find("an"))
+# # # # print(big_food.rfind("an")) # start searching from the right side
 # # # #
-# # # print("Going to loop through 2 strings at once until one runs out")
-# # # print("First string", alphabet)
-# # # print("Second string", number_string)
-# # # result = ""
-# # # for letter, number in zip(alphabet, number_string):
-# # #     print(letter, "and", number)
-# # #     result += f"Letter {number} is {letter}\n"  #not the most efficient for large strings
-# # # print("All done with looping through two strings")
-# # # print(result)
-# # # # so above loop ends as soon as one of the sequences run out
-# # #
-# # #
-# # # # # # # # # # # isArtFound = "art" in food
-# # # # # # # # # # # print(isArtFound)
-# # # #
-# # print("Valdis" < "Voldemars")  # because 'a' , 'o' in Unicode table
-# # print("Valdis" < "Voldis")  # because 'a' , 'o' in Unicode table
-# # print(len("Valdis") < len("Voldemars"))  # by length
-# # # #
-# # # # # # # # # # # # # print("Alice said 'Run rabbit run!' and drunk something")
-# # # # # # # # # # # # # print("When we need both quotes \" \\ and also ' \n\n new lines ")
-# # # # # # # # # # # # # print(""" I can write whatever here
-# # # # # # # # # # # # # even new lines
-# # # # # # # # # # # # #             with tabs
-# # # # # # # # # # # # #              ' " " " '
-# # # # # # # # # # # # # """)
-# # # # # # # # # # # # # print(food.upper())
-# # # # # print(food.isalpha())
-# # # big_food = food + " banana"
-# # # print(big_food)
-# # # print(big_food.find("an"))
-# # # print(big_food.rfind("an")) # start searching from the right side
-# # #
-# city = "    Rīga     "
-# print(city.strip())  # clean up both sides
-# print(city.rstrip())
-# print(city.lstrip())  # we still have whitespace after right side
-# # print(city)  # city is still dirty
-# # # clean_city = city.strip()
-# # # print(clean_city)
-# # # # # # # # # # print(big_food.find("a"))
-# # # # # # # # # # print(big_food.rfind("a"))
-# # # # # # # # # # # # # sentence = "A quick brown fox run over a sleeping dog"
-# # # # # # # # # # # # # words = sentence.split()
-# # # # # # # # # # # # # print(words)
+city = "    Rīga     "
+print(city.strip())  # clean up both sides
+print(city.rstrip())
+print(city.lstrip())  # we still have whitespace after right side
+# # # print(city)  # city is still dirty
+# # # # clean_city = city.strip()
+# # # # print(clean_city)
+# # # # # # # # # # # print(big_food.find("a"))
+# # # # # # # # # # # print(big_food.rfind("a"))
+# # # # # # # # # # # # # # sentence = "A quick brown fox run over a sleeping dog"
+# # # # # # # # # # # # # # words = sentence.split()
+# # # # # # # # # # # # # # print(words)
 
-# for i, c in enumerate(food):
-#     print(f"Index {i}: Letter -> {c}")
+# # for i, c in enumerate(food):
+# #     print(f"Index {i}: Letter -> {c}")
