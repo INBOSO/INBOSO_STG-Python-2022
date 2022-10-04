@@ -27,6 +27,7 @@ print(original_text)
 old_text = "not bad"
 new_text = "good"
 
+# text = ['not', 'bad']
 replase_text = original_text.replace(old_text, new_text)
 
 print(replase_text)
