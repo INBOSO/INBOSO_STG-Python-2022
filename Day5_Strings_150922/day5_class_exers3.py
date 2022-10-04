@@ -19,7 +19,14 @@
 
 
 
+#My solution
 
 original_text = input("Enter your text here: ")
 print(original_text)
-print(original_text().replace("is not bad","is good")) # i can chain operations on strings
+
+old_text = "not bad"
+new_text = "good"
+
+replase_text = original_text.replace(old_text, new_text)
+
+print(replase_text)
