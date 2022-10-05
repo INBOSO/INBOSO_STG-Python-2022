@@ -22,6 +22,9 @@
 # print(empty_list)  # we can add values later
 # print(len(empty_list)) # should be 0
 # # # #
+from os import listdir
+
+
 my_list = [5, 6, "Valdis", True, 3.65, "alus"]  # most common way of creating a list using [el1, el2]
 # print(my_list)
 # print(type(my_list), len(my_list)) # prints type and length
@@ -153,22 +156,23 @@ print("Valdis" in my_list)
 # # print("al" in "Valdis", "al" in my_list[2])
 # # print("al" in my_list)  # this is false,because in needs a exact match, to get partial we need to go deeper
 # # # # # # # # # # # # # iterate over items
-# # # print("*"*20)
-# # # # for it in my_list:
-# # # #     print(it)
-# # # #
-# # needle = "al" # what we want to find in our list
-# # for item in my_list:
-# #     print("Checking ", item)
-# #     if type(item) == str and needle in item: # not all types have in operator
-# #         print(f"Found {needle=} in {item=}") # python 3.8 and up, good for debuggin
-# #         print(f"Found needle={needle} in item={item}") # for python 3.7
+print("*"*20)
+for it in my_list:
+    print(it)
+
+needle = "al" # what we want to find in our list
+for item in my_list:
+    print("Checking ", item)
+    if type(item) == str and needle in item: # not all types have in operator
+        print(f"Found {needle=} in {item=}") # python 3.8 and up, good for debuggin
+        print(f"Found needle={needle} in item={item}") # for python 3.7
 # # # #
 # # # # # # # # # # # # #
 # # # # # # # # # my_list.append()
-# # my_list.append("Bauskas alus") # adds "Bauskas alus" at the end of my_list
-# # my_list.append("Valmiermuižas alus")  # IN PLACE methods, means we modify the list
-# # print(my_list)
+
+my_list.append("Bauskas alus") # adds "Bauskas alus" at the end of my_list
+my_list.append("Valmiermuižas alus")  # IN PLACE methods, means we modify the list
+print(my_list)
 # # # #
 # # # # # # # # # # # example how to filter something
 # # find_list = [] # so we have an empty list in beginning
@@ -189,13 +193,94 @@ print("Valdis" in my_list)
 # # # #
 # # new_list += ["Malējs", "Salīgais"] # shorthand for new_list = new_list + [new items ] so flattened
 # # print(new_list)
-# # new_list.append(["Svarīgais", "Mazais"]) #notice append added a list a s nested
-# # print(new_list) # notice that we have a list in the list
-# # print(new_list[-1])
-# # print(new_list[-1][-1], new_list[-1][1]) # in this case for size 2 1 and -1 give same results
-# # new_list.extend(["Fantastiskais", "Lapsa"]) # very similar to += IN PLACE
-# # print(new_list)
+my_list.append(["Svarīgais", "Mazais"]) #notice append added a list a s nested
+print(my_list) # notice that we have a list in the list
+print(my_list[-1])
+print(my_list[-1][-1], my_list[-1][1]) # in this case for size 2 1 and -1 give same results
+my_list.extend(["Fantastiskais", "Lapsa"]) # very similar to += IN PLACE
+print(my_list)
+
+my_list.remove(6)
+print(my_list)
+my_list.remove(5)
+print(my_list)
+my_list.remove(['Svarīgais', 'Mazais'])
+print(my_list)
+
+my_list = my_list[:-1]
+print(my_list)
+
+my_list = my_list[3:]
+print(my_list)
 # # # #
+
+numbers = list(range(1,11))
+print(numbers)
+squares = []
+for num in numbers:
+    squares.append(num**2)
+print(squares)
+
+
+also_squared= [num**2 for num in numbers]
+print(also_squared)
+
+odd_squered = [num**2 for num in numbers if num % 2 == 1]
+
+odd_squered_also = []
+for num in numbers:
+    if num % 2 == 1:
+        odd_squered_also.append(num**2)
+print(odd_squered)
+print(odd_squered_also)
+
+odd_numbers = [num for num in numbers if num %2 == 1]
+print(odd_numbers)
+
+numbers_copy = [num for num in numbers]
+print(numbers_copy)
+
+numbers_copy_also = numbers.copy()
+print(numbers_copy_also)
+
+
+numbers.append(42)
+numbers.append(4)
+print(numbers)
+print(numbers.count(4))
+
+print(numbers.index(42))
+
+numbers.insert(2, 50)
+print(numbers)
+
+last_item = numbers.pop()
+print(last_item)
+print(numbers)
+
+
+numbers.append(last_item)
+print(numbers)
+
+
+numbers.reverse()
+print(numbers)
+
+numbers_reversed = (numbers[::-1])
+print(numbers)
+
+
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
+print(numbers)
+
+
+numbers.sort()
+print(numbers)
+
+
+numbers.clear()
+print(numbers)
 # # # # # print(f"{str(my_list)}") # not quite what we want
 # # # # # # # # how to convert all values to str
 # # str_list = []
@@ -244,7 +329,7 @@ print("Valdis" in my_list)
 # # print(odd_numbers)
 # # #
 # # print(numbers)
-# # odd_squares = [n*n for n in numbers if n%2 == 1]
+# odd_squares = [n*n for n in numbers if n%2 == 1]
 # # print(odd_squares)
 # # #
 # # # # same idea as above
