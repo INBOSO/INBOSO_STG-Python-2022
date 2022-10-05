@@ -20,6 +20,9 @@ while True:
     number_list.append(float(numbers))
     number_avg = round((sum(number_list) / len(number_list)),2)
     print(f"Average result of {number_list} is {number_avg} ")
+print("TOP3", sorted(number_list[-3:]))
+# print("TOP3", sorted(number_list[-3:]))
+print("BOTTOM3", sorted(number_list[:3]))
 #  print("All numbers", number_list)
 
 
