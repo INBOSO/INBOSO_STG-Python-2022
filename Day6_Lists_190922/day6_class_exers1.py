@@ -18,9 +18,9 @@ while True:
         print("Quitting time!")
         break
     number_list.append(float(numbers))
-    number_avg = sum(number_list) / len(number_list)
-    print(f"Average result of {number_list} is: ", {number_avg})
- print("All numbers", number_list)
+    number_avg = round((sum(number_list) / len(number_list)),2)
+    print(f"Average result of {number_list} is {number_avg} ")
+#  print("All numbers", number_list)
 
 
 
