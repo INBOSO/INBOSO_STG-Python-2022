@@ -281,6 +281,12 @@ print(numbers)
 
 numbers.clear()
 print(numbers)
+
+print(sum(numbers))
+print(min(numbers))
+print(max(numbers))
+
+
 # # # # # print(f"{str(my_list)}") # not quite what we want
 # # # # # # # # how to convert all values to str
 # # str_list = []
