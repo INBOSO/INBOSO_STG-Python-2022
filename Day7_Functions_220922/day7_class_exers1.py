@@ -8,3 +8,20 @@
 # PSS function should return the result, not print it.
 
 
+def add_mult(a, b, c):
+    
+    smallest_1 = min(a,b,c)
+    largest = max(a,b,c)
+    mid=smallest_1
+    for i in [a,b,c]:
+        print(f" i: {i} mid:{mid}")
+        if i > smallest_1 and i <largest :
+            mid=i
+
+    print(f"min {smallest_1} mid {mid}  max {largest}")
+    return (smallest_1 + mid) * largest
+
+result = add_mult(2,5,4)
+print(result)
+result = add_mult(20,5,-1)
+print(result)
