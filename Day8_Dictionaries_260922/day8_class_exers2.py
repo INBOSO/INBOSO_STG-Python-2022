@@ -7,3 +7,7 @@
 
 original_dict = {'a': 5, 'b': 6, 'c': 5, 'd': 6}
 
+def replace_dict_value(d, bad_val, good_val):
+    for d, bad_val in original_dict.items(): 
+        original_dict []# also common is k,v
+print(f"{d=}, {good_val=}") # this Python 3.8+ syntax good for debugging
