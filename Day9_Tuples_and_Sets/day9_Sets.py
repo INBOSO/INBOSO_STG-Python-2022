@@ -19,12 +19,12 @@ print('a' in chars) # set membership check will be O(1) so faster than in lists 
 print('e' in chars)
 print('bl' in chars)
 print(9000 in chars)
-# print(str(chars), "not quite what we wanted") # not quite what we need
-# print("".join(chars)) # so with join we will create a string from set
+print(str(chars), "not quite what we wanted") # not quite what we need
+print("".join(chars)) # so with join we will create a string from set
 # # # print(sorted("".join(chars))) # not quite
 # # # # finally
-# print("".join(sorted(chars))) # so use this if we want sorted unique characters from our string
-# print(list(chars)) # often times we want to convert to list after creating a set
+print("".join(sorted(chars))) # so use this if we want sorted unique characters from our string
+print(list(chars)) # often times we want to convert to list after creating a set
 # # # # # # # # # # # # # # # # recipe to sort characters unique characters into a list an then make a string
 # # # # print("".join(sorted(set("abraValdiscadbra")))) # we staret from inner parenthesis
 # # # # # # # # # # # # # str(chars)  # not much point in this one
