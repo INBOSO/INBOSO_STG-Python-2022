@@ -42,29 +42,29 @@ print(unique_words)
 # print(list_of_unique_words)
 # # # #
 # # # # # # # # # # # # # # difference between set() and {setitem}
-# new_set = {'kartupelis'} # so not a dictionary but set
-# print(new_set)
-# food_item_set = set(['kartupelis']) # same as above
-# print(food_item_set)
-# chars = set("kartupelis")  # you pass an iterable to set(iterablehere)
-# print(chars)  #notice no specific order
-# # # #
-# # # # # # # # # Set operations
-# print(new_set == food_item_set, new_set is food_item_set) # so contents are the same but they are different objects
+new_set = {'kartupelis'} # so not a dictionary but set
+print(new_set)
+food_item_set = set(['kartupelis']) # same as above
+print(food_item_set)
+chars = set("kartupelis")  # you pass an iterable to set(iterablehere)
+print(chars)  #notice no specific order
+# # #
+# # # # # # # # Set operations
+print(new_set == food_item_set, new_set is food_item_set) # so contents are the same but they are different objects
 # # # # # # # # # # # # above two sets are equal but are two distinct data sets
 # # # #
 # # # #
-# numbers = set(range(12)) # range is iterable, so we can pass it to set
-# print(numbers) # might print in order but the order is not guaranteed
-# n3_7 = set(range(3, 8))
-# print(n3_7)
+numbers = set(range(12)) # range is iterable, so we can pass it to set
+print(numbers) # might print in order but the order is not guaranteed
+n3_7 = set(range(3, 8))
+print(n3_7)
 # # membership testing
-# print(4 in numbers)
-# print(4 in n3_7)
+print(4 in numbers)
+print(4 in n3_7)
 # # we can check whether one set is a subset of another
-# print(numbers.issubset(numbers)) # can a set be a subset of itself?
+print(numbers.issubset(numbers)) # can a set be a subset of itself?
 # # # # # # # # # # # # # below two are equal
-# print(n3_7.issubset(numbers))
+print(n3_7.issubset(numbers))
 # print(n3_7 <= numbers)  # same as above, this lets you have equal sets
 # print("n3_7 < numbers ", n3_7 < numbers ) # this will be false if both sets are equal
 # print("numbers < numbers", numbers < numbers) # this should be false
