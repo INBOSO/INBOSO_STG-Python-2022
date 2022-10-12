@@ -4,18 +4,18 @@
 # # # # # # # # # Available across most OSes
 # # # #
 # # # # # # # # # 4 ways of importing modules
-import datetime
+# import datetime
 # # print(datetime.datetime.now())
 # # print(datetime.datetime.today())
-# # from datetime import datetime as dt  # datetime has datetime submodule!
-# # print(dt.now()) # we using renamed datetime as dt
-# # from datetime import datetime
+from datetime import datetime as dt  # datetime has datetime submodule!
+# print(dt.now()) # we using renamed datetime as dt
+from datetime import datetime
 # # # print(datetime.now()) # we are using the original datetime
 # # # print(datetime.now().year)
 # import string # mostly useful constants
 # # print(string.ascii_letters)
 # # print(string.digits)
-# import math
+import math
 # # # # # # # # # import math as mth # Python likes these short names but not for standard library!
 # print(math.cos(3.1415926), math.sin(math.pi), math.pi)
 # from math import floor # i could import floor alone but beware name collission
@@ -32,7 +32,7 @@ from statistics import pstdev
 from statistics import stdev
 # mylist = [1,2,3,10,4,5,6,7,8,9,10]
 # print(mean(mylist), median(mylist), mode(mylist), pstdev(mylist), stdev(mylist)) # so pstdev is population standard deviation
-# import random
+import random
 # random_list = [random.randint(1,100) for _ in range(10_000)] # so i am creating a list of 20 random integers between 1 and 100
 # # print statistics of random_list
 # print(mean(random_list), median(random_list), mode(random_list), pstdev(random_list), stdev(random_list))
@@ -104,16 +104,16 @@ import itertools
 # # # # # # # # # # print(type(my_count.most_common()))
 # # # # # # # # # print(my_count['a'])
 # # a simple way of timing something
-# dice_throws = 100_000
-# beg = dt.now()
+dice_throws = 100_000
+beg = dt.now()
 # # print(beg)  # print takes time by itself so measurement will be imprecise
-# ran_nums = [random.randint(1, 6)+random.randint(1, 6)
-#             for _ in range(dice_throws)]
-# end = dt.now()
-# print(beg)
+ran_nums = [random.randint(1, 6)+random.randint(1, 6)
+            for _ in range(dice_throws)]
+end = dt.now()
+print(beg)
 
-# print(end)
-# print(f"Took {end-beg} seconds")
+print(end)
+print(f"Took {end-beg} seconds")
 # # print(sum(ran_nums)/len(ran_nums))
 # # print(mean(ran_nums))
 # # # # # so i put all the throws in buckets (presumably from 2 to 12)
@@ -131,13 +131,13 @@ import itertools
 
 
 # # #
-# numbers = list(range(10))
-# # so sample will give you a random sample of the list without replacement - meaning uniques
-# new_shuffled = random.sample(numbers, len(numbers))
-# print("Sample: no duplicates", new_shuffled)
+numbers = list(range(10))
+# so sample will give you a random sample of the list without replacement - meaning uniques
+new_shuffled = random.sample(numbers, len(numbers))
+print("Sample: no duplicates", new_shuffled)
 # # # # choices is not going to work here Return a k sized list of elements chosen from the population with replacement.
-# print("Choices: expect duplicates", random.choices(numbers, k=10))  # so choices will give us duplicates, with replacement
-# print(numbers)
+print("Choices: expect duplicates", random.choices(numbers, k=10))  # so choices will give us duplicates, with replacement
+print(numbers)
 # random.shuffle(numbers)  # IN PLACE so returns nothing
 # print(numbers)
 # numbers.sort() # again IN PLACE
