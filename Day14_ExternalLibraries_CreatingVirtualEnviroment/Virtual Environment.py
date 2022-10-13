@@ -16,6 +16,9 @@
 # myenv\Scripts\activate
 # on Powershell
 # myenv\Scripts\Activate.ps1
+# (IF error: running  scripts is disabled on this system. 
+# run Powershell > Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope CurrentUser
+# )
 # Now, any package that you install using pip will be installed in the myenv folder, isolated from the global Python installation.
 # To deactivate the virtual environment, simply close the terminal.
 # To delete the virtual environment, just delete the myenv folder.
